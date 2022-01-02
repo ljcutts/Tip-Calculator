@@ -1,0 +1,463 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.google.com/specimen/Space+Mono");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/*  global classes */
+
+body{
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.img-container{
+  margin-bottom: 5rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 960px;
+    height: 500px;
+    background-color: white; 
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 10px;
+    margin-bottom: 5rem;
+    
+}
+
+/*
+================= 
+Left Side Of App
+=================
+*/
+
+.left-side{
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 1.8rem;
+}
+
+/*
+=============== 
+Bill Input
+===============
+*/
+
+.bill{
+    padding-top: 2.5rem;
+    padding-left: 1.5rem ;
+}
+
+.bill > h1{
+  position: absolute;
+  margin-top: -1.3rem;
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 0.6;
+  font-family: 'Space Mono', monospace;
+}
+
+.dollar-input{
+  width: 420px;
+  height: 2.5rem;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  border: none;
+  background-image: url(./images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 4% 52%;
+  text-align: right; 
+  cursor: pointer;
+}
+
+.dollar-input::placeholder{
+  color: hsl(183, 100%, 15%);
+}
+
+.dollar-input:hover{
+  border: solid;
+  border-color: rgb(64,224,208);
+}
+
+
+.number{
+  color: hsl(183, 100%, 15%);
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;;
+}
+
+/*
+=============== 
+Tip Button Box
+===============
+*/
+
+.tip{
+  display: flex;
+  flex-direction: column;
+}
+
+.tip-heading{
+  position: absolute;
+  margin-top: -2rem;
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0.6;
+  font-family: 'Space Mono', monospace;
+}
+
+.tip-btn-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+    gap: 26px 44px;
+    align-items: center;
+}
+
+.tip button{
+  width: 8rem;
+  height: 3.5rem;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border: none;
+  border-radius: .5rem;
+  font-weight: 600;
+  font-family: 'Space Mono', monospace;;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.tip button:hover{
+  color: hsl(183, 100%, 15%);
+  background-color:rgb(0,250,154,0.3);
+}
+
+.tip input{
+  width: 8rem;
+  height: 3.5rem;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: .5rem;
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  padding-left: 0.8rem;
+}
+
+.custom-btn::placeholder{
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  text-align: center;
+}
+
+.tip input:hover{
+  border: solid;
+  border-color: rgb(64,224,208);
+}
+
+/*
+====================== 
+Number Of People Input
+======================
+*/
+.people{
+    width: 400px;
+    height: 5rem;
+}
+
+
+.people > h1{
+  position: absolute;
+  margin-top: -1.5rem;
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0.6;
+  font-family: 'Space Mono', monospace;
+}
+
+.zero-alert{
+  padding-left: 7rem;
+  color:  transparent;
+}
+
+.people-input{
+  width: 420px;
+  height: 2.5rem;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  background-image: url(./images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: 4% 52%;
+  text-align: right; 
+  cursor: pointer;
+  color: hsl(183, 100%, 15%);
+}
+
+.people-input::placeholder{
+  color: hsl(183, 100%, 15%);
+}
+
+.people-input:hover{
+  border: solid;
+  border-color: rgb(64,224,208);
+}
+/*
+================================= 
+Right Side/Tip Amount Of The App
+=================================
+*/
+.results{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 1.5rem;
+    margin: 1.8rem;
+} 
+
+.inside-results{
+ padding: 2.5rem;
+ padding-left: 2.5rem;
+ padding-bottom: 2rem;
+ height: 100%;
+ width: 100%;
+}
+/*
+=============== 
+Tip Amount
+===============
+*/
+.tip-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.top-part{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tip-amount h1{
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Space Mono', monospace;
+  color: white;
+  margin-bottom: 0;
+}
+
+.tip-amount p {
+  font-weight: 700;
+  font-size: 13px;
+  text-align: start;
+  margin-bottom: 0;
+}
+
+.money-amount{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(32,178,170); 
+}
+
+.money-amount h1{
+  font-size: 50px;
+  margin-top: 0.5rem;
+}
+
+
+.dollar-img{
+  color: rgb(32,178,170); 
+  height: 30px;
+  margin-bottom: 0.3rem;
+  filter: rgb(32,178,170);
+}
+
+/*
+=============== 
+Reset Button
+===============
+*/
+
+.reset-button-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.reset-button{
+  width: 342px;
+  height: 3.5rem;
+  background-color: rgb(32,178,170);
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.reset-button span{
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.reset-button:hover{
+   background-color:rgb(162, 255, 219);
+}
+
+/*
+================================================ 
+Removes Default Border Color For All Inputs
+================================================
+*/
+
+input:focus{
+  outline: none !important;
+  border: none;
+  border-color: rgb(64,224,208);
+}

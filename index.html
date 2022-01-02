@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: darkorange}
+  </style>
+</head>
+<body>
+  <!-- Logo At The Top -->
+  <div class="img-container">
+    <img src="./images/logo.svg" alt="">
+  </div>
+  <!-- Logo At The Top -->
+  <!-- The Start Of The App -->
+   <main>
+     <!-- Left Side/Inputs Of The App -->
+    <div class="left-side">
+      <!-- Bill Input -->
+      <div class="bill">
+        <h1>Bill</h1>
+        <input type="number" class="dollar-input number" id="bill-input" placeholder="0"/>
+
+
+      </div>
+      <!-- Bill Input -->
+      <!-- Tip Button Box -->
+      <div class="tip">
+        <h1 class="tip-heading">Select Tip %</h1>
+       <div class="tip-btn-container">
+          <button id="tip-5">5%</button>
+          <button id="tip-10">10%</button>
+          <button id="tip-15">15%</button>
+          <button id="tip-25">25%</button>
+          <button id="tip-50">50%</button>
+          <input type="number" class="custom-btn" id="custom-tip" placeholder="Custom"></input>
+       </div>
+       </div>
+      <!-- Tip Button Box -->
+       <!-- Number of People Input -->
+      <div class="people">
+        <h1>Number of people<span class="zero-alert">Can't be zero</span></h1>
+        <input type="number" class="people-input number" id='people-input' placeholder="0">
+      </div>
+      <!-- Number of People Input -->
+    </div>
+    <!-- Left Side/Inputs Of The App -->
+    <!-- Right Side/Tip Amount Of The App -->
+    <div class="results">
+      <div class="inside-results">
+        <div class="tip-container">
+          <!-- Tip Amount Based On Bill -->
+          <div class="top-part">
+            <div class="tip-amount">
+              <h1>Tip Amount</h1>
+              <p>/ person</p>
+            </div>
+            <div class="money-amount">
+              <img src="./images/icon-dollar.svg" class="dollar-img" alt="">
+              <h1 class="tip-num">0.00</h1>
+            </div>
+          </div>
+          <!-- Tip Amount Based On Bill -->
+          <!-- Tip Amount * The Amount Of People -->
+      <div class="top-part">
+          <div class="tip-amount">
+            <h1>Total</h1>
+            <p>/ person</p>
+          </div>
+          <div class="money-amount">
+            <img src="./images/icon-dollar.svg" class="dollar-img" alt="">
+            <h1 class="total-num">0.00</h1>
+          </div>
+        </div>
+        <!-- Tip Amount * The Amount Of People -->
+       </div>
+       <!-- Reset Button -->
+        <div class="reset-button-container">
+          <button class="reset-button"><span>RESET</span>
+          </button>
+        </div>
+        <!-- Reset Button -->
+   </div>
+    </div>
+    <!-- Right Side/Tip Amount Of The App -->
+
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Larry Cutts</a>.
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
