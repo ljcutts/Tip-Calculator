@@ -58,7 +58,7 @@ I'm getting a lot more comfortable with HTML and CSS. But as far as CSS, I didn'
 - (https://html-color.codes) - Massively helped out for CSS colors
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ljcutts)
+- Frontend Mentor - [@ljcutts](https://www.frontendmentor.io/profile/ljcutts)
 
 
 ## Acknowledgments
