@@ -236,7 +236,7 @@ Tip Button Box
   flex-direction: column;
 }
 
-.tip-heading{
+.tip-heading h1{
   position: absolute;
   margin-top: -2rem;
   font-size: 15px;
@@ -522,10 +522,13 @@ body{
 }
 
 .tip-heading{
-  margin-top: -13rem;
-  padding-right: 12.1rem;
-  min-width: 350px;
   position: fixed;
+}
+
+.tip-heading h1{
+  margin: 0;
+  min-width: 350px;
+  bottom: 6.5rem;
 }
 
 .tip-btn-container{
