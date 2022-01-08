@@ -521,14 +521,10 @@ body{
   padding-left: 1.5rem;
 }
 
-.tip-heading{
-  position: fixed;
-}
-
 .tip-heading h1{
   margin: 0;
   min-width: 350px;
-  bottom: 6.5rem;
+  bottom: 41.7rem;
 }
 
 .tip-btn-container{
