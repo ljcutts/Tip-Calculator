@@ -5,6 +5,7 @@ Fonts
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 @import url("https://fonts.google.com/specimen/Space+Mono");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
 /*
 =============== 
@@ -356,7 +357,7 @@ Right Side/Tip Amount Of The App
 .inside-results{
  padding: 2.5rem;
  padding-left: 2.5rem;
- padding-bottom: 2rem;
+ padding-bottom: 1.1rem;
  height: 100%;
  width: 100%;
 }
@@ -371,6 +372,7 @@ Tip Amount
   justify-content: space-between;
   flex-direction: column;
   gap: 1rem;
+  font-family: 'Space Mono', monospace;
 }
 
 .top-part{
@@ -405,14 +407,14 @@ Tip Amount
 .money-amount h1{
   font-size: 50px;
   margin-top: 0.5rem;
+  font-family: 'Space Mono', monospace;
 }
 
 
-.dollar-img{
+.money-amount span{
   color: rgb(32,178,170); 
-  height: 30px;
-  margin-bottom: 0.3rem;
-  filter: rgb(32,178,170);
+  font-size: 50px;
+  margin-bottom: 0.1rem;
 }
 
 /*
@@ -426,7 +428,7 @@ Reset Button
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 9rem;
 }
 
 .reset-button{
@@ -460,4 +462,119 @@ input:focus{
   outline: none !important;
   border: none;
   border-color: rgb(64,224,208);
+}
+
+@media only screen and (max-width: 768px) {
+body{
+  min-height: 121px;
+  max-width: 375px;
+  background-color: white;
+}
+.img-container{
+ height: 140px;
+ width: 375px;
+ text-align: center;
+ padding-top: 2rem;
+ background-color: hsl(185, 41%, 84%);
+ margin-bottom: 0;
+ }
+ main{
+    display: flex;
+    flex-direction: column;
+    height: 849px;
+    width: 375px;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    align-items: center;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+    margin-bottom: 0;
+}
+
+.left-side{
+    height: 424.5px;
+    width: 375px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bill{
+    padding-left: 0rem;
+    margin-top: 4rem;
+}
+
+.dollar-input{
+  width: 315px;
+  height: 2.5rem;
+  text-align: right; 
+}
+.tip{
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  width: 100%;
+  padding-left: 1.5rem;
+}
+
+.tip-heading{
+  margin-top: -13rem;
+  padding-right: 12.1rem;
+}
+
+.tip-btn-container{
+    grid-template-columns: 157.5px 157.5px;
+    gap: 17px 15px;
+    width: 315px;
+    margin-right: 1rem;
+}
+
+.tip button{
+  width: 157px;
+  height: 3.5rem;
+}
+
+
+.tip input{
+  width: 157px;
+  height: 3.5rem;
+  padding-left: 0.8rem;
+}
+.people{
+    margin-top: 4rem;
+    padding-left: 2.5rem;
+}
+
+.people-input{
+  width: 315px;
+  height: 2.5rem;
+}
+
+.money-amount h1{
+  font-size: 40px;
+  margin-top: 0.5rem;
+}
+
+.results{
+  margin: 0;
+  margin-top: 4.5rem;
+}
+
+.zero-alert{
+  padding-left: 0;
+  font-size: 15px
+}
+
+.reset-button-container{
+  margin-top: 3rem;
+}
+
+.reset-button{
+  width: 275px;
+  height: 3.5rem;
+}
+
 }
