@@ -465,7 +465,7 @@ input:focus{
   border-color: rgb(64,224,208);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 375px) {
 body{
   min-height: 121px;
   max-width: 375px;
@@ -525,7 +525,7 @@ body{
   margin-top: -13rem;
   padding-right: 12.1rem;
   min-width: 350px;
-  max-height: 18.75px;
+  min-height: 18.75px;
 }
 
 .tip-btn-container{
