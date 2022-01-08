@@ -525,6 +525,7 @@ body{
   margin-top: -13rem;
   padding-right: 12.1rem;
   min-width: 350px;
+  max-height: 18.75px;
 }
 
 .tip-btn-container{
