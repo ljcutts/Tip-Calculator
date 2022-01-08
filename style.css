@@ -446,6 +446,7 @@ Reset Button
   font-size: 24px;
   font-weight: 600;
   opacity: 0.6;
+  color: black;
 }
 
 .reset-button:hover{
@@ -523,6 +524,7 @@ body{
 .tip-heading{
   margin-top: -13rem;
   padding-right: 12.1rem;
+  min-width: 350px;
 }
 
 .tip-btn-container{
