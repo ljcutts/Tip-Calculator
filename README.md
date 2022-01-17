@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/tipcalculator-with-css-grid-css-flexbox-vanilla-javascript-ODrmSMpWi)
+- Live Site URL: (https://ljcutts.github.io/Tip-Calculator/)
 
 ## My process
 I first set up the body of the app and made sure to add the background color. Then made a main HTML element and start styling it with it's size, along with using CSS Grid. I made sure that the main element had to two sides with the same sizes but of course different properties. I first worked on the left side which has all the inputs and a couple of the svg images. Then I worked on the right side which gives you the total tip amount. Once I liked the CSS I had for the app and had all the buttons and inputs coded in, I worked on the Javascript(functionality). I started using the document property so that I can target different HTML elements. Then I focused a lot on making sure the amounts on the right side of the app changed values based on the bill and tip percentage on the left side. I started adding event listeners to the HTML elements I targeted and also added alerts and extra functionality if the user were to try to input a number 0 or less than 0.
