@@ -520,11 +520,16 @@ body{
   width: 100%;
   padding-left: 1.5rem;
 }
-
+/* keep messing around with tip-heading to deal with stupid bug */
+.tip-heading{
+  margin-bottom: 2rem;
+  height: 0;
+  width: 0;
+}
 .tip-heading h1{
-  margin: 0;
-  min-width: 350px;
-  bottom: 41.7rem;
+  margin: 0 auto;
+  width: 10rem;
+  height: 0;
 }
 
 .tip-btn-container{
